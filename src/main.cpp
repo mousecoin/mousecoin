@@ -832,7 +832,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 
     if(nHeight < 5121) // 10 coin block reward within the first 3.5 days
-        nSubsidy = 10;
+        nSubsidy = 10 * COIN;
     if(nHeight > 1051200) // no block reward after 2 years
         nSubsidy = 0;
 
